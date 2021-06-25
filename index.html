@@ -1,0 +1,35 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://fnog8yl5ubvaayhyo7xxxw-on.drv.tw/Family%20Book/FB1.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father (Javed Khan)",
+   "3. My Mother (Saima Khan)",
+   "4. Me (Alaina Khan)",
+   ];
+
+ var images=[
+   "papa pic.jfif",
+   "mumma picture.jfif",
+   "My Photo.jfif",
+    ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
